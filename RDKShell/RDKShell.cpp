@@ -1808,7 +1808,7 @@ namespace WPEFramework {
         const string RDKShell::Initialize(PluginHost::IShell* service )
         {
             std::cout << "initializing\n";
-	    RDKShell& mRDKShell::  = RDKShell::_instance;
+	    RDKShell& mRDKShell = RDKShell::_instance;
             mRDKShell.mEnableEasterEggs = false ;
 	    std::cout << "disabled Easter eggs " << std::endl ;
             char* waylandDisplay = getenv("WAYLAND_DISPLAY");
