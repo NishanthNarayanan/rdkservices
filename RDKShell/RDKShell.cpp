@@ -1811,12 +1811,12 @@ namespace WPEFramework {
             RDKShell* mRDKShell = nullptr ;
             if( nullptr != RDKShell::_instance )
 	    {
-               std::cout << "Disabling eastereggs while initializing \n ;
+               std::cout << "Disabling eastereggs while initializing \n" ;
                mRDKShell = RDKShell::_instance;
                mRDKShell->mEnableEasterEggs = false ;
             }
             else{
-               std::cout << "couldn't disbale easteregg at initialize \n ;
+               std::cout << "couldn't disbale easteregg at initialize \n";
             } 
             char* waylandDisplay = getenv("WAYLAND_DISPLAY");
             if (NULL != waylandDisplay)
